@@ -1,0 +1,9 @@
+{
+  "name": "forge-minions-demo",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A demo repo where Forge minions autonomously open pull requests.",
+  "scripts": {
+    "test": "node --test --test-reporter=tap test/"
+  }
+}
