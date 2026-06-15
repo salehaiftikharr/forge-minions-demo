@@ -14,3 +14,10 @@ test("slugify: basic case", () => {
 test("slugify: collapses consecutive spaces into a single dash", () => {
   assert.equal(utils.slugify("a   b  c"), "a-b-c");
 });
+
+// Also failing — the open issue for clamp.
+test("clamp: constrains a value to the [min, max] range", () => {
+  assert.equal(utils.clamp(5, 0, 10), 5);
+  assert.equal(utils.clamp(-3, 0, 10), 0);
+  assert.equal(utils.clamp(99, 0, 10), 10);
+});
