@@ -6,6 +6,5 @@ export function add(a, b) {
 }
 
 export function slugify(input) {
-  // Known issue: a run of consecutive spaces becomes multiple dashes.
-  return String(input).trim().toLowerCase().replace(/ /g, "-");
+  return String(input).trim().toLowerCase().replace(/\s+/g, "-");
 }
