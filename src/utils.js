@@ -8,3 +8,7 @@ export function add(a, b) {
 export function slugify(input) {
   return String(input).trim().toLowerCase().replace(/\s+/g, "-");
 }
+
+export function capitalize(str) {
+  return str.charAt(0).toUpperCase() + str.slice(1);
+}
