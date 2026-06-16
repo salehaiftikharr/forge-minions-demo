@@ -8,3 +8,7 @@ export function add(a, b) {
 export function slugify(input) {
   return String(input).trim().toLowerCase().replace(/\s+/g, "-");
 }
+
+export function truncate(str, max) {
+  return str.length > max ? str.slice(0, max) + "…" : str;
+}
